@@ -1,0 +1,143 @@
+<!-- ### 08-05-2024 ###  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+
+    <style>
+        body{
+            background-image: url('background.avif');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #maindiv{
+            background-color: antiquewhite;
+            margin-top: 25px;
+            margin-left: 150px;
+            margin-right: 150px;
+            align-items: center;
+            text-align: center;
+            height: 628px;
+            padding-top: 20px;
+        }
+
+        #subdiv1{
+            margin-right: 48%;
+            text-align: right;
+            position: absolute;
+            width: 576px;
+        }
+
+        #subdiv2{
+            text-align: left;
+            margin-left: 49%;
+            position: relative;
+
+        }
+        input[type=submit]{
+            color: white;
+            background-color: blue;
+            width: 70px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: white;">SURVEY FORM</h1>
+
+    <div id="maindiv">
+        <form>
+            <p style="text-align: center;">Let us know how we can improve</p>
+            
+            <div id="subdiv1">
+                <br>
+                <label>*Name : </label>
+                <br>
+                <br>
+                <label>*Email : </label>
+                <br>
+                <br>
+                <label>*Age : </label>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <label>Which option best describes your current role?</label>
+                <br>
+                <br>
+                <label>*How likely is that you would recommend this program to a friend?</label>
+                <br>
+                <br>
+                <br>
+                <br>
+                <label>What do you like most here : </label>
+                <br>
+                <br>
+                <label>Things that should be improved in the future (Check all that apply) : </label>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <label>Any Comments or Suggestions?</label>
+            </div>
+
+            <div id="subdiv2">
+                <br>
+                <input type="text" name="fname" required placeholder="Enter your name">
+                <br>
+                <br>
+                <input type="email" name="email" required placeholder="Enter your Email">
+                <br>
+                <br>
+                <input type="number" name="age" required placeholder="Age">
+                <br>
+                <br>
+                <input type="file" value="Choose a file">
+                <br>
+                <br>
+                <select name="current_position">
+                    <option value="" selected disabled>-----Select-----</option>
+                    <option value="Student">Student</option>
+                    <option value="Working">Working</option>
+                    <option value="Others">Others</option>
+                </select>
+                <br>
+                <br>
+                <input type="radio" name="option" value="Definitly" required> Definitly
+                <br>
+                <input type="radio" name="option" value="Maybe" required> Maybe
+                <br>
+                <input type="radio" name="option" value="Not sure" required> Not sure
+                <br>
+                <br>
+                <select name="like">
+                    <option value="" selected disabled>Select an option</option>
+                    <option value="Student">Student</option>
+                    <option value="Working">Working</option>
+                    <option value="Others">Others</option>
+                </select>
+                <br>
+                <br>
+                <input type="checkbox"> Front-end Projects
+                <br>
+                <input type="checkbox"> Back-end Projects
+                <br>
+                <input type="checkbox"> Data Visualization
+                <br>
+                <br>
+                <textarea placeholder="Enter your comment here..."></textarea>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

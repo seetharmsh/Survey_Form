@@ -1,0 +1,121 @@
+<!-- ### 08-05-2024 ###  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        body{
+            background-image: url('background.avif');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        div{
+            background-color: antiquewhite;
+            margin-top: 25px;
+            margin-left: 150px;
+            margin-right: 150px;
+            align-items: center;
+            text-align: center;
+            height: 628px;
+            padding-top: 20px;
+        }
+
+        input[type=submit]{
+            color: white;
+            background-color: blue;
+            width: 70px;
+            height: 30px;
+            margin-top: 50px;
+
+        }
+
+        .col1{
+            text-align: right;
+            width: 50%;
+        }
+
+        .col2{
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: white;">SURVEY FORM</h1>
+    <div>   
+        <p style="text-align: center;">Let us know how we can improve</p>
+        <form>
+        <table cellpadding="5px" width="100%">
+            <tr>
+                <td class="col1">*Name : </td>
+                <td class="col2"><input type="text" required placeholder="Enter your name"></td>
+            </tr>
+            <tr>
+                <td class="col1">*Email : </td>
+                <td class="col2"><input type="email" required placeholder="Enter your Email"></td>
+            </tr>
+            <tr>
+                <td class="col1">*Age : </td>
+                <td class="col2"><input type="number" required placeholder="Age"></td>
+            </tr>
+            <tr>
+                <td class="col1"></td>
+                <td class="col2"><input type="file" value="Choose a file"></td>
+            </tr>
+            <tr>
+                <td class="col1">Which option best describes your current role?</td>
+                <td class="col2">
+                    <select name="current_position">
+                        <option value="" selected disabled>-----Select-----</option>
+                        <option value="Student">Student</option>
+                        <option value="Working">Working</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="col1">*How likely is that you would recommend this program to a friend?</td>
+                <td class="col2">
+                    <input type="radio" name="option" value="Definitly" required> Definitly
+                    <br>
+                    <input type="radio" name="option" value="Maybe" required> Maybe
+                    <br>
+                    <input type="radio" name="option" value="Not sure" required> Not sure
+                </td>
+            </tr>
+            <tr>
+                <td class="col1">What do you like most here : </td>
+                <td class="col2">
+                    <select name="like">
+                        <option value="" selected disabled>Select an option</option>
+                        <option value="Student">Student</option>
+                        <option value="Working">Working</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="col1">Things that should be improved in the future (Check all that apply) : </td>
+                <td class="col2">
+                    <input type="checkbox"> Front-end Projects
+                    <br>
+                    <input type="checkbox"> Back-end Projects
+                    <br>
+                    <input type="checkbox"> Data Visualization
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td class="col1">Any Comments or Suggestions?</td>
+                <td class="col2"><textarea placeholder="Enter your comment here..."></textarea></td>  
+            </tr> 
+        </table>
+        <input type="submit" value="Submit">
+        </form>
+    </div>
+    
+</body>
+</html>
